@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #f3f5fc;
+}
+
+/*.Logo {
+    padding-top: 10px;
+    margin-left: 15px;
+    width: 10%;
+}*/
+
+main {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+   background: #f3f5fc;
+}
+
+.text-area{
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    left: 10%;
+    top: 15%;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+}
+
+.text-area::placeholder {
+    color: rgb(52, 52, 238);
+}
+
+.text-area:focus,
+.text-area:active {
+    border: none;
+    outline: none;
+}
+.informacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    position: absolute;
+    width: 70%;
+    left: 12%;
+    top: 62%;
+}
+.informacion p{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: gray;
+    opacity: 0.9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 68%;
+}
+.boton-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0854fa;
+    border-radius: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
+.boton-desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #ecedf1;
+    border: 1px solid #3474ff;
+    border-radius: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    color: #0854fa; 
+}
+.boton-encriptar:hover,
+.boton-desencriptar:hover{
+    margin: 0.3%;
+    width: 25%;
+    padding: 2%;
+}
+.text-mensaje{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 74%;
+    left: 55%;
+    top: 10%;
+    background: white;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.5); 
+    border-radius: 25px;
+    border: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+.text-mensaje:focus,
+.text-mensaje:active {
+    border: none;
+    outline: none;
+}
+.text-mensaje::placeholder{
+    color: black;
+}
+.copiar {
+    box-sizing: border-box;
+    position: absolute;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 20%;
+    left: 60%;
+    top: 70%;
+    border-radius: 20px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    color: #3874f7; 
+    border: 1px solid #3474ff;
+}
+.copiar:hover{
+    margin: 0.3%;
+    padding: 2%;
+}
+
+/*Diseño responsivo */
+@media (max-width: 57em) {
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .text-mensaje{
+        width: 100%;
+    }
+    .text-area{
+        width: 80%;
+        height: 20%;
+        left: 10%;
+        top: 5%;
+    }
+    .informacion{
+        width: 80%;
+        left: 10%;
+        top: 65%;
+    }
+    .informacion p{
+        font-size: 16px;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .boton-encriptar,
+    .boton-desencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .boton-encriptar:hover,
+    .boton-desencriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .text-mensaje{
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .copiar{
+        width: 48%;
+        border-radius: 16px; 
+    }
+    .copiar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+}
